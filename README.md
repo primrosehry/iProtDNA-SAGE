@@ -30,7 +30,7 @@
 - scikit-learn<br>
 - scipy=1.10.1<br>
 - PyGCL=0.1.2<br>
-- dgl=1.0.0<br>
+- dgl=1.1.0<br>
 - biopython<br>
 - numpy<br>
 - tqdm<br>
