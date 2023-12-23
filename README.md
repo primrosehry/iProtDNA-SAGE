@@ -34,17 +34,8 @@
 - biopython<br>
 - numpy<br>
 - tqdm<br>
-# If you want to reproduce our model, follow the steps below to run the script.
-1. Use the pre-trained ESMFold_v1 model to predict the protein structure and save the structure as a PDB file. You can run the following script.<br>
-&bull;`esmfold.py`
-2. Get DNA sequence data and saves the representation of each residue as a CSV file. You can run the following script.<br>
-&bull;`esm2.py`
-3. Calculate the distance matrix between each amino acid residue on a given protein chain and save the result as a CSV file. You can run the following script.<br>
-&bull;`distance_matrix.py`
-4. Data Processing. You can run the following script.<br>
-&bull;`Dataset.py`
-5. Use SAGE model for training and evaluate the performance of the model on a test set. You can run the following script.<br>
-&bull;`SAGE_classifier.py`
-6. Evaluate the performance of the SAGE model on the DNA sequence classification task by cross-validation and calculate the performance metrics of the model. You can run the following script.<br>
+# Usage
+If you want to reproduce our model, please obtain the protein PDB file and use the 'esm2_t48_15B_UR50D' model to generate the residue features, then construct the graph data based on the distances between atoms, and finally input them into 'SAGE_classifier.py' to predict the binding properties of protein residues to DNA, where 'k-folder_ cross-validation.py' can get the ten-fold cross-validation results of the model.<br>
+&bull;`SAGE_classifier.py`<br>
 &bull;`k-folder_cross-validation.py`
 
